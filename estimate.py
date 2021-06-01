@@ -4,11 +4,9 @@ import random
 
 def wallis(n):
     p=1
-    for i in range(n):
-        x=float(4*i*i)
-        y=float(x-1)
-        z=x/y
-        return(2*p)
+    for i in range(1,n+1):
+        p=p*(4*i*i)/(4*i*i-1)
+    return(2*p)
         
 def monte_carlo(n):
     cp= 0
