@@ -8,6 +8,7 @@ def wallis(n):
         x=float(4*i*i)
         y=float(x-1)
         z=x/y
+        p=z*p
     return(2*p)
         
 def monte_carlo(n):
