@@ -4,7 +4,7 @@ import random
 
 def wallis(n):
     p=1
-    for i in range(1,n+1):
+    for i in range(n):
         x=float(4*i*i)
         y=float(x-1)
         z=x/y
@@ -13,7 +13,7 @@ def wallis(n):
 def monte_carlo(n):
     cp= 0
     sp= 0
-    for i in range(1,n+1):
+    for i in range(n):
         rand_x= random.uniform(0, 1)
         rand_y= random.uniform(0, 1)
         origin_dist= rand_x**2 + rand_y**2
